@@ -1,15 +1,18 @@
+html {
+  overflow-y: scroll;
+}
+
 body{
 	background-color: #cccccc;
 	font-family: san serif;
 	font-size:17px;	
 	margin: 0px;
-	padding-top: 15px;
+	padding: 15px;
 }
 
 ul.nav{
 	list-style-type: none;
 	float: right;
-	padding-right: 25px;
 }
 
 li.nav{
@@ -17,18 +20,24 @@ li.nav{
 	padding: 10px;
 }
 
+@font-face {
+    font-family: ext;
+    src: url("/fonts/ext.ttf");
+}
+
+@font-face{
+	font-family: ext;
+    src: url("/fonts/ext.eot");
+}
+
 h1.header{
 	clear: both;
+	font-family: ext;
 }
 
 a:link {
 	color: #000000;
 	text-decoration: none;
-  -o-transition:1.5s;
-  -ms-transition:1.5s;
-  -moz-transition:1.5s;
-  -webkit-transition:1.5s;
-  transition:1.5s;
 }
 
 a:visited {
@@ -45,7 +54,7 @@ a:active{
 }
 
 
-.login_input, .request_input, .survey_input, .pay_input, .search_input, .account_input, .reminder_input, .inv_input{
+.login_input, .request_input, .survey_input, .pay_input, .search_input, .accounts_input, .reminder_input, .inv_input, .apply_input, .admin_input, .status_input{
   -webkit-appearance: none;
   -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
   -webkit-rtl-ordering: logical;
@@ -97,7 +106,7 @@ a:active{
   padding-left: 6px;
   padding-right: 6px;
   padding-top: 5px;
-  text-align: start;
+  text-align: center;
   text-indent: 0px;
   text-shadow: none;
   text-transform: none;
@@ -112,7 +121,7 @@ a:active{
   zoom: 1;
 }
 
-.login_button, .pay_button, .request_button, .survey_button, .search_button, .account_button, .reminder_button, .inv_button{
+.login_button, .pay_button, .request_button, .survey_button, .search_button, .accounts_button, .reminder_button, .inv_button, .apply_button, .admin_button, .status_button{
   -webkit-appearance: none;
   -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
   -webkit-user-select: none;
@@ -166,27 +175,67 @@ a:active{
   text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
   text-transform: none;
   vertical-align: middle;
-  width: 61px;
+  width: auto;
   word-spacing: 0px;
   writing-mode: lr-tb;
   zoom: 1;
 }
 
-#button1id, #button1, #requestbutton1, #surveybutton1, #searchbutton1, #accountbutton1, #reminderbutton1, #invbutton1{
+#button1id, #button1, #requestbutton1, #surveybutton1, #searchbutton1, #accountbutton1, #reminderbutton1, #invbutton1, #applybutton1, #adminbutton1, #statusbutton1{
 	background-image: linear-gradient(to bottom,#62c462,#51a351);
 	background-color: #5bb75b;
 }
 
-#button2id, #searchbutton2 {
+#button2id, #searchbutton2, #statusbutton2 {
 	background-image: linear-gradient(to bottom,#5bc0de,#2f96b4);
 	background-color: #49afcd;
 }
 
 
-#button2, #requestbutton2, #surveybutton2, #accountbutton2, #reminderbutton2, #invbutton2{
+#button2, #requestbutton2, #surveybutton2, #accountbutton2, #reminderbutton2, #invbutton2, #applybutton2, #adminbutton2, #accountsdeletebutton{
 	background-image: linear-gradient(to bottom,#ee5f5b,#bd362f);
 	background-color: #da4f49;
 }
+
+.admin_form_cell, .employee_form_cell, .resident_form_cell, .residentaccount_form, .emaccount_form, .emmaintenance_form_cell{
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: center;
+	padding: 15px;
+}
+
+.success_text{
+  box-sizing: border-box;
+  color: rgb(76, 76, 76);
+  display: inline-block;
+  font-family: CostarBrownLight, sans-serif;
+  font-size: 20px;
+  height: 128px;
+  line-height: 32px;
+  margin-bottom: 48px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 594.90625px;
+}
+
+.hoverTable{
+	width:70%; 
+	border-collapse:collapse; 
+}
+.hoverTable td{ 
+	padding:7px; border:#000000 1px solid;
+}
+
+.hoverTable tr{
+	background: #fff;
+}
+
+.hoverTable tr:hover {
+    background-color: #A4A4A4;
+}
+
+
 
 
 

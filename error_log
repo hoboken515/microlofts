@@ -1,0 +1,17 @@
+[13-Apr-2015 04:46:49 UTC] PHP Warning:  require_once(db_connect.php): failed to open stream: No such file or directory in /home/frankencluster/public_html/group01/login.php on line 5
+[13-Apr-2015 04:46:49 UTC] PHP Fatal error:  require_once(): Failed opening required 'db_connect.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/frankencluster/public_html/group01/login.php on line 5
+[13-Apr-2015 04:46:56 UTC] PHP Warning:  require_once(db_connect.php): failed to open stream: No such file or directory in /home/frankencluster/public_html/group01/login.php on line 5
+[13-Apr-2015 04:46:56 UTC] PHP Fatal error:  require_once(): Failed opening required 'db_connect.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/frankencluster/public_html/group01/login.php on line 5
+[13-Apr-2015 04:56:21 UTC] PHP Warning:  mysql_connect(): Access denied for user 'g01we'@'ip-192-186-239-6.ip.secureserver.net' (using password: YES) in /home/frankencluster/public_html/group01/db_connect.php on line 6
+[13-Apr-2015 05:01:47 UTC] PHP Notice:  Undefined variable: errorMessage in /home/frankencluster/public_html/group01/login.php on line 23
+[13-Apr-2015 05:01:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/frankencluster/public_html/group01/login.php:23) in /home/frankencluster/public_html/group01/login.php on line 24
+[13-Apr-2015 05:02:16 UTC] PHP Notice:  Undefined variable: errorMessage in /home/frankencluster/public_html/group01/login.php on line 23
+[13-Apr-2015 05:02:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/frankencluster/public_html/group01/login.php:23) in /home/frankencluster/public_html/group01/login.php on line 24
+[14-Apr-2015 08:49:23 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/frankencluster/public_html/group01/home_navbar.php on line 4
+[14-Apr-2015 08:51:02 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/frankencluster/public_html/group01/home_navbar.php on line 4
+[14-Apr-2015 08:51:02 UTC] PHP Notice:  Undefined index: usertype in /home/frankencluster/public_html/group01/home_navbar.php on line 8
+[14-Apr-2015 08:51:02 UTC] PHP Notice:  Undefined index: usertype in /home/frankencluster/public_html/group01/home_navbar.php on line 11
+[14-Apr-2015 08:51:02 UTC] PHP Notice:  Undefined index: usertype in /home/frankencluster/public_html/group01/home_navbar.php on line 14
+[14-Apr-2015 08:51:02 UTC] PHP Notice:  Undefined variable: portalPage in /home/frankencluster/public_html/group01/home_navbar.php on line 37
+[14-Apr-2015 08:53:24 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/frankencluster/public_html/group01/home_navbar.php on line 4
+[14-Apr-2015 08:53:37 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/frankencluster/public_html/group01/home_navbar.php on line 4
