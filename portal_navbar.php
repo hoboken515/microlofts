@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if($_SESSION['usertype'] == 'resident'){
+	if($_SESSION['usertype'] == 'admin'){
 		echo'
 			<div class="navig">
 				<ul class="nav">
@@ -28,7 +28,7 @@
 			</div>
 		';
 	}
-	else if($_SESSION['usertype'] == 'admin'){
+	else if($_SESSION['usertype'] == 'resident'){
 		echo'
 			<div class="navig">
 				<ul class="nav">

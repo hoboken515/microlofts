@@ -35,10 +35,11 @@
 </nav>
 
 <div class="container">
-    <br>
-    <center><h3><b>Apply Here!</b></h3></center>
-    <hr>
-
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Apply Here!
+        </h1>
+    </div>
     <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
         <div class="panel" >
                 <div class="panel-heading">

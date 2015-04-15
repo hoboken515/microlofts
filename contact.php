@@ -34,10 +34,60 @@
     <!-- /.container -->
 </nav>
 
-<div>
-	<h1 class="header">Contact Us</h1>
+<!--Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Contact Micro Loft
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i> Leasing Center Contact </h4>
+                </div>
+                <div class="panel-body">
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i> Administrative Contacts</h4>
+                </div>
+                <div class="panel-body">
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i> Maintenance Contacts</h4>
+                </div>
+                <div class="panel-body">
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i> Security Contacts </h4>
+                </div>
+                <div class="panel-body">
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
 
 </body>
 
