@@ -15,7 +15,7 @@
 	<h1 class="header">Pay Rent</h1>
 </div>
 <center>
-<form class="form-horizontal" name="pay_form">
+<form class="form-horizontal" name="pay_form" action="resident_pay.php" method="post">
 
 <div class="control-group">
   <label class="control-label" for="amount">Payment Amount</label>

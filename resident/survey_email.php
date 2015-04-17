@@ -11,10 +11,15 @@
 	}
 	
 	// Send an email to all included email addresses
-	$adminEmails = array("jblack17@student.gsu.edu");
+	$adminEmails = array("jblack17@student.gsu.edu","joseph.bontecou@bobcats.gcsu.edu");
 	for($i = 0; $i < count($adminEmails); $i++){
 		mail($adminEmails[$i], "New Resdient Survey", $message);
 	}
+
+    $sql = "INSERT INTO tbl_surveys (resident_id, q1_answer, q2_answer, q3_answer, q4_answer, q5_answer, comments) ".
+        "VALUES (1,".$_POST['question1'].",".$_POST['question2'].",".$_POST['question3'].",".$_POST['question5'].",5,'".$_POST['comments']."');";
+
+    mysql_query($sql);
 	
 	header('location: survey_success.php');
 ?>

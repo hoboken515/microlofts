@@ -11,36 +11,27 @@
 	include '/home/frankencluster/public_html/group01/portal_navbar.php';
 ?>
 
-<div>
-	<h1 class="header">Resident Portal</h1>
+<h1 class="header">Resident Portal</h1>
+
 <center>	
 <h2>News Board</h2>
-<form name="res_news_table" action="" name="resident_form">	
-	<table class="hoverTable">
-		<tr>
-			<th class="resident_form_cell">Date</th>
-			<th class="resident_form_cell">Topic Name</th>
-			<th class="resident_form_cell">Comments</th>
-		</tr>
-		<tr>
-			<td class="resident_form_cell">info</td>
-			<td class="resident_form_cell">info</td>
-			<td class="resident_form_cell">info</td>
-		</tr>
-		<tr>
-			<td class="resident_form_cell">info</td>
-			<td class="resident_form_cell">info</td>
-			<td class="resident_form_cell">info</td>
-		</tr>
-		<tr>
-			<td class="resident_form_cell">info</td>
-			<td class="resident_form_cell">info</td>
-			<td class="resident_form_cell">info</td>
-		</tr>
-	</table>
-</form>	
+<?php
+	include '/home/frankencluster/public_html/group01/cgi-bin/news_board_fetch.php';
+?>
+<br>
+
+<h2>Add to News Board</h2>
+<form id="add" action="/cgi-bin/news_board_insert.php" method="post">
+    <table>
+    <tr><td><b> Topic: </b></td><td><input id="new_topic" name="new_topic" type="text"></tr>
+    <tr><td><b> Comments: </b></td><td><input id="new_comment" name="new_comment" type="textarea"></td></tr>
+    </table>
+
+    <div style="margin-top:50px">
+    <button id="btn-apply" type="submit" class="btn btn-success btn-lg" >Submit</button>
+    </div>    
+</form>     
 </center>
-</div>
 
 </body>
 

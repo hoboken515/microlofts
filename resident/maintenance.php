@@ -15,7 +15,7 @@
 	<h1 class="header">Maintenance Requests</h1>
 	
 	<center>
-	<form class="form-horizontal" name="maint_form">
+	<form class="form-horizontal" name="maint_form" action="resident_request.php" method="post">
 
 <!-- Text input-->
 <div class="control-group">

@@ -9,7 +9,7 @@
 					<li class="nav"><a href="/admin/accounts.php"> Accounts </a></li>
 					<li class="nav"><a href="/admin/inventory.php"> Unit Inventory </a></li>
 					<li class="nav"><a href="/admin/reminder.php"> Rent Reminder </a></li>
-					<li class="nav"><a href="/admin/man_requests.php"> Maintenance Requests </a></li>
+					<li class="nav"><a href="/admin/maintenance.php"> Maintenance Requests </a></li>
 					<li class="nav"><a href="/signout.php"> Sign Out </a></li>
 				</ul>
 			</div>

@@ -9,22 +9,37 @@
 
 <?php	include '/home/frankencluster/public_html/group01/portal_navbar.php';?>
 
-<div>
-	<h1 class="header">Admin Portal</h1>
-	<center>
-<h2>Create a New Topic</h2>
-<form class="admin_form">
+<h1 class="header">Admin Portal</h1>
+<center>
 
-<!-- Text input-->
+<h2> News Board </h2>
+<?php include '/home/frankencluster/public_html/group01/cgi-bin/news_board_fetch.php';?>
+<br>
+
+<h2>Add to News Board</h2>
+<form id="add" action="/cgi-bin/news_board_insert.php" method="post">
+    <table>
+    <tr><td><b> Topic: </b></td><td><input id="new_topic" name="new_topic" type="text"></tr>
+    <tr><td><b> Comments: </b></td><td><input id="new_comment" name="new_comment" type="textarea"></td></tr>
+    </table>
+
+    <div style="margin-top:50px">
+    <button id="btn-apply" type="submit" class="btn btn-success btn-lg" >Submit</button>
+    </div>    
+</form>     
+</center>
+<!-- Possibly Depricated? Needs Design Review. -->
+
+<!-- Text input
 <div class="control-group">
   <label class="control-label" for="title">Title</label>
   <div class="controls">
     <input id="title" name="title" type="text" placeholder="" class="admin_input" required="">
     
   </div>
-</div>
+</div>-->
 
-<!-- Select Basic -->
+<!-- Select Basic 
 <div class="control-group">
   <label class="control-label" for="type">Post Type</label>
   <div class="controls">
@@ -34,18 +49,18 @@
       <option>Resident News</option>
     </select>
   </div>
-</div>
+</div>-->
 
-<!-- Text input-->
+<!-- Text input
 <div class="control-group">
   <label class="control-label" for="comments">Comments</label>
   <div class="controls">
     <input id="comments" name="comments" type="text" placeholder="" class="admin_input" required="">
     
   </div>
-</div>
+</div>-->
 
-<!-- Button (Double) -->
+<!-- Button (Double) 
 <div class="control-group">
   <label class="control-label" for="applybutton1"></label>
   <div class="controls">
@@ -53,37 +68,7 @@
     <button id="adminbutton2" name="adminbutton2" class="admin_button">Cancel</button>
   </div>
 </div>
-
-</form>
-
-<h2>News Board</h2>
-<form name="admin_news_table" action="" id="admin_form">	
-	<table class="hoverTable">
-		<tr>
-			<th class="admin_form_cell">Date</th>
-			<th class="admin_form_cell">Topic Name</th>
-			<th class="admin_form_cell">Comments</th>
-		</tr>
-		<tr>
-			<td class="admin_form_cell">info</td>
-			<td class="admin_form_cell">info</td>
-			<td class="admin_form_cell">info</td>
-		</tr>
-		<tr>
-			<td class="admin_form_cell">info</td>
-			<td class="admin_form_cell">info</td>
-			<td class="admin_form_cell">info</td>
-		</tr>
-		<tr>
-			<td class="admin_form_cell">info</td>
-			<td class="admin_form_cell">info</td>
-			<td class="admin_form_cell">info</td>
-		</tr>
-	</table>
-</form>
-</center>
-</div>
+-->
 
 </body>
-
 </html>
