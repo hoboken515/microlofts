@@ -1,3 +1,4 @@
+<?php include '/home/frankencluster/public_html/group01/portal_access_block.php';?>
 <html>
 <head>
 <title>Send Rent Reminder | Micro Loft</title>
@@ -15,7 +16,7 @@
 	
 <center>
 <h2>Send a Rent Reminder</h2>
-<form class="form-horizontal" name="reminder_form">
+<form class="form-horizontal" name="reminder_form" action="reminder_email.php" method="post">
 
 <!-- Text input-->
 <div class="control-group">

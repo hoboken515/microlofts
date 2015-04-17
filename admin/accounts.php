@@ -1,3 +1,4 @@
+<?php include '/home/frankencluster/public_html/group01/portal_block_admin.php';?>
 <html>
 <head>
 <title>Tenant Accounts | Micro Loft</title>

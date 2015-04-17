@@ -1,3 +1,4 @@
+<?php include '/home/frankencluster/public_html/group01/portal_block_resident.php';?>
 <html>
 <head>
 <title>Survey | Micro Loft</title>
@@ -14,13 +15,13 @@
 	<h1 class="header">Resident Survey</h1>
 	
 <center>
-	<form class="form-horizontal" name="survey_form">
+	<form class="form-horizontal" name="survey_form" action="survey_email.php" method="post">
 
 <!-- Text input-->
 <div class="control-group">
   <label class="control-label" for="name">Name</label>
   <div class="controls">
-    <input id="name" name="name" type="text" placeholder="" class="survey_input" required="">
+    <input id="name" name="name" type="text" placeholder="" class="survey_input">
     
   </div>
 </div>
@@ -29,7 +30,7 @@
 <div class="control-group">
   <label class="control-label" for="number">Phone Number</label>
   <div class="controls">
-    <input id="number" name="number" type="text" placeholder="" class="survey_input" required="">
+    <input id="number" name="number" type="text" placeholder="" class="survey_input">
     
   </div>
 </div>

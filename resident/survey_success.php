@@ -1,3 +1,4 @@
+<?php include '/home/frankencluster/public_html/group01/portal_block_resident.php';?>
 <html>
 <head>
 <title>Survey Success | Micro Loft</title>

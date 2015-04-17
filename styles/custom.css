@@ -1,10 +1,30 @@
+html{
+  height: 100%;
+}
+
 body{
 	background-color: #cccccc;
 	font-family: san serif;
 	font-size:17px;	
-	margin: 0px;
   padding-top: 50px; /*Padding for the navigation bar*/
+  height: 100%;
 }
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+    padding-top: -50px;
+}
+
+.push {
+  height: 50px; * .push must be the same height as .footer */
+}
+
+.footer {
+    height: 50px; 
+}
+
 
 header.carousel {
     height: 50%;
@@ -70,10 +90,14 @@ h1.header{
 	font-family: ext;
 }
 
+.nav-space{
+  margin-top: 20px;
+}
 
+.apply-form-control {
+  width: inherit;
+}
 
-
-
-
-
-
+.apply-panel-body {
+  text-align: center;
+}

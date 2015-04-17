@@ -1,9 +1,9 @@
 <html>
 <head>
 <title>Gallery | Micro Loft</title>
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="/js/jquery-2.1.3.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/main.js"></script>
 
 	<link rel="stylesheet" href="../styles/bootstrap.min.css">
 	<link  type="text/css" rel="stylesheet" href="../styles/custom.css">
@@ -40,16 +40,15 @@
             </h1>
         </div>
         <div class="col-md-12">
-            <div class="panel panel-default">
+          <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><i class="fa fa-fw fa-check"></i> </h4>
-                </div>
-                <div class="panel-body">
-                    <p> </p>
-                </div>
-            </div>
-        </div>
-    </div>
+                </div><p></p>
+            <div id="gallery"><iframe src="/gallery/MicroLofts/index.html" width="100%" height="100%" frameborder="0" name="galleryiframe"></iframe>
+			</div>
+          </div>
+		</div>
+	</div>
 </div>
 
 </body>

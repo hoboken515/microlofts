@@ -50,7 +50,11 @@
                     <h4><i class="fa fa-fw fa-check"></i> Leasing Center Contact </h4>
                 </div>
                 <div class="panel-body">
-                    <p> </p>
+                    <p>Gabby "She Did All The Work" Cruise<br>
+					1234 Circle Lane<br>
+					Atlanta, GA 30303<br>
+					(770) 867-5309
+					</p>
                 </div>
             </div>
         </div>
@@ -60,7 +64,10 @@
                     <h4><i class="fa fa-fw fa-check"></i> Administrative Contacts</h4>
                 </div>
                 <div class="panel-body">
-                    <p> </p>
+                    <p>Saad "I'm Gonna Get You Sucka" Admiral-E<br>
+					1234 Circle Lane<br>
+					Atlanta, GA 30303<br>
+					(770) 867-5309 </p>
                 </div>
             </div>
         </div>
@@ -72,7 +79,10 @@
                     <h4><i class="fa fa-fw fa-check"></i> Maintenance Contacts</h4>
                 </div>
                 <div class="panel-body">
-                    <p> </p>
+                    <p>Julian "Not Really" Black<br>
+					1234 Circle Lane<br>
+					Atlanta, GA 30303<br>
+					(770) 867-5309 </p>
                 </div>
             </div>
         </div>
@@ -82,7 +92,10 @@
                     <h4><i class="fa fa-fw fa-check"></i> Security Contacts </h4>
                 </div>
                 <div class="panel-body">
-                    <p> </p>
+                    <p>Lee "The Muscle" Buttercup<br>
+					1234 Circle Lane<br>
+					Atlanta, GA 30303<br>
+					(770) 867-5309 </p>
                 </div>
             </div>
         </div>

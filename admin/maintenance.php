@@ -1,3 +1,4 @@
+<?php include '/home/frankencluster/public_html/group01/portal_access_block.php';?>
 <html>
 <head>
 <title>Manage Maintenance Requests | Micro Loft</title>
