@@ -21,3 +21,7 @@
 [14-Apr-2015 09:59:51 UTC] PHP Notice:  Undefined index: price in /home/frankencluster/public_html/group01/admin/add_unit.php on line 9
 [14-Apr-2015 09:59:51 UTC] PHP Notice:  Undefined index: status in /home/frankencluster/public_html/group01/admin/add_unit.php on line 10
 [14-Apr-2015 09:59:51 UTC] PHP Notice:  Undefined index: comments in /home/frankencluster/public_html/group01/admin/add_unit.php on line 11
+[17-Apr-2015 03:25:50 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/frankencluster/public_html/group01/admin/create_account.php on line 45
+[17-Apr-2015 03:30:42 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/frankencluster/public_html/group01/admin/create_account.php on line 45
+[17-Apr-2015 03:32:56 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/frankencluster/public_html/group01/admin/create_account.php on line 45
+[19-Apr-2015 02:04:15 UTC] PHP Fatal error:  Function name must be a string in /home/frankencluster/public_html/group01/cgi-bin/accounts_residents_fetch.php on line 4

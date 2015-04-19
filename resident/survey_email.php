@@ -4,8 +4,8 @@
 	$message .= "How satisfied are you with Micro Loft?: ".$_POST['question1']."\n";
 	$message .= "How satisfied are you with the Micro Loft staff?: ".$_POST['question2']."\n";
 	$message .= "How satisfied are you with the turn around time for maintenance requests?: ".$_POST['question3']."\n";
-	$message .= "How satisfied are you with the community amenities provided by Micro Loft?: ".$_POST['question5']."\n"; // Buttons not working properly
-	$message .= "How satisfied are you with the cleanliness of the community areas?: 5\n"; // Buttons not working properly
+	$message .= "How satisfied are you with the community amenities provided by Micro Loft?: ".$_POST['question4']."\n"; // Buttons not working properly
+	$message .= "How satisfied are you with the cleanliness of the community areas?: ".$_POST['question5']."\n"; // Buttons not working properly
 	if($_POST['comments'] != ''){ // Send comments if not left blank
 		$message .= "Comments: ".$_POST['comments'];
 	}

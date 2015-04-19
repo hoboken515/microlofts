@@ -38,15 +38,6 @@
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="phone">Phone Number</label>
-  <div class="controls">
-    <input id="phone" name="phone" type="text" placeholder="" class="reminder_input">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
   <label class="control-label" for="email">Email</label>
   <div class="controls">
     <input id="email" name="email" type="text" placeholder="" class="reminder_input">

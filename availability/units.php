@@ -47,7 +47,10 @@
                         <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
                     </div>
                 </div>
-                <table class="table">
+<?php 
+    include '/home/frankencluster/public_html/group01/cgi-bin/units_availability_fetch.php'
+?>
+<!--                <table class="table">
                     <thead>
                         <tr class="filters">
                             <th><input type="text" class="form-control" placeholder="Apt#" disabled></th>
@@ -73,9 +76,9 @@
                         </tr>
                     </tbody>
                 </table>
+-->
             </div>
         </div>
-
         <br>
         <div class="unitmaps">
             <div class="col-md-4">

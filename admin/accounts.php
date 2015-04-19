@@ -15,7 +15,26 @@
 	<h1 class="header">Manage Tenant Accounts</h1>
 <center>	
 <h2>Create an Account</h2>
-<form class="form-horizontal" name="accounts_form1">
+<form class="form-horizontal" name="accounts_form1" action="create_account.php" method="post">
+
+<!-- Multiple Radios -->
+<div class="control-group">
+  <label class="control-label" for="type">Type of Account</label>
+  <div class="controls">
+	<label class="radio" for="type-0">
+      <input type="radio" name="type" id="type-0" value="Admin" onclick="document.getElementById('company').disabled = true;  document.getElementById('depart').disabled = true; document.getElementById('unit').disabled = true;">
+      Admin
+    </label>
+    <label class="radio" for="type-1">
+      <input type="radio" name="type" id="type-1" value="Tenant" onclick="document.getElementById('unit').disabled = false; document.getElementById('company').disabled = true; document.getElementById('depart').disabled = true;">
+      Resident
+    </label>
+    <label class="radio" for="type-2">
+      <input type="radio" name="type" id="type-2" value="Employee" onclick="document.getElementById('company').disabled = false;  document.getElementById('depart').disabled = false; document.getElementById('unit').disabled = true;">
+      Employee
+    </label>
+  </div>
+</div>
 
 <!-- Text input-->
 <div class="control-group">
@@ -53,30 +72,11 @@
   </div>
 </div>
 
-<!-- Multiple Radios -->
-<div class="control-group">
-  <label class="control-label" for="type">Type of Account</label>
-  <div class="controls">
-    <label class="radio" for="type-0">
-      <input type="radio" name="type" id="type-0" value="Tenant" checked="checked">
-      Tenant
-    </label>
-    <label class="radio" for="type-1">
-      <input type="radio" name="type" id="type-1" value="Employee">
-      Employee
-    </label>
-    <label class="radio" for="type-2">
-      <input type="radio" name="type" id="type-2" value="Admin">
-      Admin
-    </label>
-  </div>
-</div>
-
 <!-- Text input-->
 <div class="control-group">
   <label class="control-label" for="unit">Unit Number</label>
   <div class="controls">
-    <input id="unit" name="unit" type="text" placeholder="" class="accounts_input">
+    <input id="unit" name="unit" type="text" placeholder="Only required for resident account" class="accounts_input" disabled="disabled">
     
   </div>
 </div>
@@ -85,7 +85,7 @@
 <div class="control-group">
   <label class="control-label" for="company">Company Name</label>
   <div class="controls">
-    <input id="company" name="company" type="text" placeholder="" class="accounts_input">
+    <input id="company" name="company" type="text" placeholder="Only required for employee account" class="accounts_input" disabled="disabled">
     
   </div>
 </div>
@@ -94,7 +94,7 @@
 <div class="control-group">
   <label class="control-label" for="depart">Department</label>
   <div class="controls">
-    <input id="depart" name="depart" type="text" placeholder="" class="accounts_input">
+    <input id="depart" name="depart" type="text" placeholder="Only required for employee account" class="accounts_input" disabled="disabled">
     
   </div>
 </div>
@@ -104,112 +104,21 @@
   <label class="control-label" for="accountbutton1"></label>
   <div class="controls">
     <button id="accountbutton1" name="accountbutton1" class="accounts_button">Create Account</button>
-    <button id="accountbutton2" name="accountbutton2" class="accounts_button">Cancel</button>
   </div>
 </div>
 </form>
 
-<p><h2>Open & Close an Account</h2>
+<br>
+<h2> Resident Accounts </h2>
+<?php include '/home/frankencluster/public_html/group01/cgi-bin/accounts_residents_fetch.php' ?>
 
-<form name="em_account_form" action="">	
-	<table class="hoverTable">
-		<tr>
-			<th class="emmaintenance_form_cell">First Name</th>
-			<th class="emmaintenance_form_cell">Last Name</th>
-			<th class="emmaintenance_form_cell">Unit</th>
-			<th class="emmaintenance_form_cell">User ID</th>
-			<th class="emmaintenance_form_cell">Status</th>
-		</tr>
-		<tr>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell"><form class="form-horizontal" name="status_form">
+<br>
+<h2> Administrative Accounts </h2>
+<?php include '/home/frankencluster/public_html/group01/cgi-bin/accounts_admins_fetch.php' ?>
 
-<!-- Select Basic -->
-<div class="control-group">
-  <label class="control-label" for="Status"></label>
-  <div class="controls">
-    <select id="Status" name="Status" class="status_input">
-      <option>Open</option>
-      <option>Close</option>
-    </select>
-  </div>
-</div>
-
-<!-- Button (Double) -->
-<div class="control-group">
-  <label class="control-label" for="applybutton1"></label>
-  <div class="controls">
-    <button id="statusbutton1" name="applybutton1" class="status_button">Submit</button>
-    <button id="statusbutton2" name="applybutton2" class="status_button">Cancel</button>
-  </div>
-</div>
-</form>
-</td>
-		</tr>
-		<tr>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell"><form class="form-horizontal" name="status_form">
-
-<!-- Select Basic -->
-<div class="control-group">
-  <label class="control-label" for="Status"></label>
-  <div class="controls">
-    <select id="Status" name="Status" class="status_input">
-      <option>Open</option>
-      <option>Close</option>
-    </select>
-  </div>
-</div>
-
-<!-- Button (Double) -->
-<div class="control-group">
-  <label class="control-label" for="applybutton1"></label>
-  <div class="controls">
-    <button id="statusbutton1" name="applybutton1" class="status_button">Submit</button>
-    <button id="statusbutton2" name="applybutton2" class="status_button">Cancel</button>
-  </div>
-</div>
-</form>
-</td>
-		</tr>
-		<tr>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell">info</td>
-			<td class="emmaintenance_form_cell">info</td>
-<td class="emmaintenance_form_cell"><form class="form-horizontal" name="status_form">
-
-<!-- Select Basic -->
-<div class="control-group">
-  <label class="control-label" for="Status"></label>
-  <div class="controls">
-    <select id="Status" name="Status" class="status_input">
-      <option>Open</option>
-      <option>Close</option>
-    </select>
-  </div>
-</div>
-
-<!-- Button (Double) -->
-<div class="control-group">
-  <label class="control-label" for="applybutton1"></label>
-  <div class="controls">
-    <button id="statusbutton1" name="applybutton1" class="status_button">Submit</button>
-    <button id="statusbutton2" name="applybutton2" class="status_button">Cancel</button>
-  </div>
-</div>
-</form>
-</td>
-		</tr>
-	</table>
-	
-</form>
+<br>
+<h2> Employee Accounts </h2>
+<?php include '/home/frankencluster/public_html/group01/cgi-bin/accounts_employees_fetch.php' ?>
 
 </center>
 

@@ -17,7 +17,7 @@
 <?php include '/home/frankencluster/public_html/group01/cgi-bin/news_board_fetch.php';?>
 <br>
 
-<h2>Add to News Board</h2>
+<!--<h2>Add to News Board</h2>
 <form id="add" action="/cgi-bin/news_board_insert.php" method="post">
     <table>
     <tr><td><b> Topic: </b></td><td><input id="new_topic" name="new_topic" type="text"></tr>
@@ -28,6 +28,7 @@
     <button id="btn-apply" type="submit" class="btn btn-success btn-lg" >Submit</button>
     </div>    
 </form>     
+-->
 </center>
 
 </body>

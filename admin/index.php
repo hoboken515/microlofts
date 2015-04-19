@@ -18,13 +18,27 @@
 
 <h2>Add to News Board</h2>
 <form id="add" action="/cgi-bin/news_board_insert.php" method="post">
-    <table>
-    <tr><td><b> Topic: </b></td><td><input id="new_topic" name="new_topic" type="text"></tr>
-    <tr><td><b> Comments: </b></td><td><input id="new_comment" name="new_comment" type="textarea"></td></tr>
-    </table>
+	
+	<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="fname">Topic</label>
+  <div class="controls">
+    <input id="new_topic" name="new_topic" type="text" class="admin_input" required="">
+    
+  </div>
+</div>
+
+	<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="fname">Comments</label>
+  <div class="controls">
+    <input id="new_comment" name="new_comment" type="textarea" class="admin_input" required="">
+    
+  </div>
+</div>
 
     <div style="margin-top:50px">
-    <button id="btn-apply" type="submit" class="btn btn-success btn-lg" >Submit</button>
+    <button  type="submit" class="admin_button" id="adminbutton1" >Submit</button>
     </div>    
 </form>     
 </center>

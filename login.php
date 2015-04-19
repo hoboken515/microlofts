@@ -1,6 +1,13 @@
+<?php
+	session_start();
+	if(isset($_SESSION['username'])){ // Prevent a logged in user from accessing the login page
+		header('location: /index.php');
+	}
+	else{
+?>
 <html>
 <head>
-	<title>>Login | Micro Loft</title>
+	<title>Login | Micro Loft</title>
 
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -106,3 +113,7 @@
 </body>
 
 </html>
+
+<?php
+	}
+?>

@@ -12,6 +12,10 @@
 ?>
 
 <h1 class="header">Resident Portal</h1>
+<?php
+	session_start();
+    echo 'You are logged in as: '.$_SESSION['username'];
+?>
 
 <center>	
 <h2>News Board</h2>
@@ -20,7 +24,7 @@
 ?>
 <br>
 
-<h2>Add to News Board</h2>
+<!--<h2>Add to News Board</h2>
 <form id="add" action="/cgi-bin/news_board_insert.php" method="post">
     <table>
     <tr><td><b> Topic: </b></td><td><input id="new_topic" name="new_topic" type="text"></tr>
@@ -31,6 +35,7 @@
     <button id="btn-apply" type="submit" class="btn btn-success btn-lg" >Submit</button>
     </div>    
 </form>     
+-->
 </center>
 
 </body>

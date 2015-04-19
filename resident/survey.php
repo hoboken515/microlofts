@@ -17,42 +17,6 @@
 <center>
 	<form class="form-horizontal" name="survey_form" action="survey_email.php" method="post">
 
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="name">Name</label>
-  <div class="controls">
-    <input id="name" name="name" type="text" placeholder="" class="survey_input">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="number">Phone Number</label>
-  <div class="controls">
-    <input id="number" name="number" type="text" placeholder="" class="survey_input">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="email">Email</label>
-  <div class="controls">
-    <input id="email" name="email" type="text" placeholder="" class="survey_input">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="unit">Unit</label>
-  <div class="controls">
-    <input id="unit" name="unit" type="text" placeholder="" class="survey_input">
-    
-  </div>
-</div>
-
 <!-- Multiple Radios (inline) -->
 <div class="control-group">
   <label class="control-label" for="question1">How satisfied are you with Micro Loft?</label>
@@ -138,24 +102,24 @@
 <div class="control-group">
   <label class="control-label" for="question5">How satisfied are you with the community amenities provided by Micro Loft?</label>
   <div class="controls">
-    <label class="radio inline" for="question5-0">
-      <input type="radio" name="question5" id="question5-0" value="1" checked="checked">
+    <label class="radio inline" for="question4-0">
+      <input type="radio" name="question4" id="question4-0" value="1" checked="checked">
       1
     </label>
-    <label class="radio inline" for="question5-1">
-      <input type="radio" name="question5" id="question5-1" value="2">
+    <label class="radio inline" for="question4-1">
+      <input type="radio" name="question4" id="question4-1" value="2">
       2
     </label>
-    <label class="radio inline" for="question5-2">
-      <input type="radio" name="question5" id="question5-2" value="3">
+    <label class="radio inline" for="question4-2">
+      <input type="radio" name="question4" id="question4-2" value="3">
       3
     </label>
-    <label class="radio inline" for="question5-3">
-      <input type="radio" name="question5" id="question5-3" value="4">
+    <label class="radio inline" for="question4-3">
+      <input type="radio" name="question4" id="question4-3" value="4">
       4
     </label>
-    <label class="radio inline" for="question5-4">
-      <input type="radio" name="question5" id="question5-4" value="5">
+    <label class="radio inline" for="question4-4">
+      <input type="radio" name="question4" id="question4-4" value="5">
       5
     </label>
   </div>

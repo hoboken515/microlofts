@@ -1,15 +1,16 @@
 <html>
 <head>
 <title>Gallery | Micro Loft</title>
-	<script src="/js/jquery-2.1.3.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="../js/jquery-2.1.3.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/main.js"></script>
 
 	<link rel="stylesheet" href="../styles/bootstrap.min.css">
 	<link  type="text/css" rel="stylesheet" href="../styles/custom.css">
 </head>
 
 <body>
+
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -34,19 +35,60 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">
-                Photo Gallery
-            </h1>
+        <div class="row">
+
+    <div class="col-lg-12">
+        <h1 class="page-header">Gallery</h1>
+    
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-image="../images/slide-1.jpg" data-target="#image-gallery">
+                <img class="img-responsive" src="../images/slide-1.jpg">
+            </a>
         </div>
-        <div class="col-md-12">
-          <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-check"></i> </h4>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-image="../images/slide-2.jpg" data-target="#image-gallery">
+                <img class="img-responsive" src="../images/slide-2.jpg">
+            </a>
+        </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-image="../images/slide-3.jpg" data-target="#image-gallery">
+                <img class="img-responsive" src="../images/slide-3.jpg">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-image="../images/slide-4.jpg" data-target="#image-gallery">
+                <img class="img-responsive" src="../images/slide-4.jpg">
+            </a>
+        </div>
+</div>
+
+
+<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="image-gallery-title"></h4>
+            </div>
+            <div class="modal-body">
+                <img id="image-gallery-image" class="img-responsive" src="">
+            </div>
+            <div class="modal-footer">
+
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
                 </div>
-            <p> </p>
-            <div id="gallery"><iframe src="http://group01.cs4370.com/images/test/MicroLofts/index.html" width="100%" height="100%" frameborder="0" name="galleryiframe"></iframe></div>
-          </div>
+
+                <div class="col-md-8 text-justify" id="image-gallery-caption">
+                </div>
+
+                <div class="col-md-2">
+                    <button type="button" id="show-next-image" class="btn btn-default">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 </body>
