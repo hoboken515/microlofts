@@ -8,11 +8,11 @@
 <body>
 
 <?php
-	include '/home/frankencluster/public_html/group01/portal_navbar.php';
+    include '/home/frankencluster/public_html/group01/portal_navbar.php';
 ?>
 
 <div>
-	<h1 class="header">Pay Rent</h1>
+    <h1 class="header">Pay Rent</h1>
 </div>
 <center>
 <form class="form-horizontal" name="pay_form" action="resident_pay.php" method="post">

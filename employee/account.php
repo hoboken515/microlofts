@@ -8,15 +8,18 @@
 <body>
 
 <?php
-	include '/home/frankencluster/public_html/group01/portal_navbar.php';
+    include '/home/frankencluster/public_html/group01/portal_navbar.php';
 ?>
 
 <div>
-	<h1 class="header">Employee Account</h1>
+<h1 class="header">Employee Account</h1>
+
 <center>
+
 <?php
     include '/home/frankencluster/public_html/group01/cgi-bin/accounts_employees_fetch.php' 
 ?>
+
 </center>
 </div>
 

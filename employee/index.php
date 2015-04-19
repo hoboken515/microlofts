@@ -7,14 +7,18 @@
 
 <body>
 
-<?php	include '/home/frankencluster/public_html/group01/portal_navbar.php';?>
+<?php
+    include '/home/frankencluster/public_html/group01/portal_navbar.php';
+?>
 
 <h1 class="header">Employee Portal</h1>
-<center>	
+<center>    
 <br>
 
 <h2> News Board </h2>
-<?php include '/home/frankencluster/public_html/group01/cgi-bin/news_board_fetch.php';?>
+<?php
+    include '/home/frankencluster/public_html/group01/cgi-bin/news_board_fetch.php';
+?>
 <br>
 
 <!--<h2>Add to News Board</h2>

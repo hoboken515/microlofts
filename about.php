@@ -1,10 +1,10 @@
 <html>
 <head>
 <title>About Us | Micro Loft</title>
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
         function initialize() {
             var mapCanvas = document.getElementById("map-canvas");
@@ -24,8 +24,8 @@
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
-	<link rel="stylesheet" href="styles/bootstrap.min.css">
-	<link  type="text/css" rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link  type="text/css" rel="stylesheet" href="styles/custom.css">
 
     <style>
         #map-canvas {
@@ -52,8 +52,8 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <?php
-			include '/home/frankencluster/public_html/group01/home_navbar.php';
-	   ?>
+            include '/home/frankencluster/public_html/group01/home_navbar.php';
+       ?>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
@@ -79,7 +79,7 @@
         </div>
     </div>
     <div class="row">
-    	<div class="col-md-6">
+        <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><i class="fa fa-fw fa-check"></i> Location </h4>

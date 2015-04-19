@@ -27,8 +27,8 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <?php
-			include '/home/frankencluster/public_html/group01/home_navbar.php';
-	   ?>
+            include '/home/frankencluster/public_html/group01/home_navbar.php';
+       ?>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->

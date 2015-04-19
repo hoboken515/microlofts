@@ -8,12 +8,12 @@
 <body>
 
 <?php
-	include '/home/frankencluster/public_html/group01/portal_navbar.php';
+    include '/home/frankencluster/public_html/group01/portal_navbar.php';
 ?>
 
 <div>
-	<h1 class="header">Manage Tenant Accounts</h1>
-<center>	
+    <h1 class="header">Manage Tenant Accounts</h1>
+<center>    
 <h2>Create an Account</h2>
 <form class="form-horizontal" name="accounts_form1" action="create_account.php" method="post">
 
@@ -21,7 +21,7 @@
 <div class="control-group">
   <label class="control-label" for="type">Type of Account</label>
   <div class="controls">
-	<label class="radio" for="type-0">
+    <label class="radio" for="type-0">
       <input type="radio" name="type" id="type-0" value="Admin" onclick="document.getElementById('company').disabled = true;  document.getElementById('depart').disabled = true; document.getElementById('unit').disabled = true;">
       Admin
     </label>

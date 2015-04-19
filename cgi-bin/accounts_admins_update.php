@@ -1,6 +1,6 @@
 <?php
-	require_once '/home/frankencluster/public_html/group01/db_connect.php';
-	
+    require_once '/home/frankencluster/public_html/group01/db_connect.php';
+ 
     $u_id = str_replace("'","\'",$_POST['u_id']);
     $fname = str_replace("'","\'",$_POST['fname']);
     $lname = str_replace("'","\'",$_POST['lname']);
@@ -12,14 +12,14 @@
 
     mysql_query($sql);
 
-	session_start();
-	if($_SESSION['usertype'] == 'admin'){
+    session_start();
+    if($_SESSION['usertype'] == 'admin'){
         header("location: /admin/accounts.php");
     }
-	if($_SESSION['usertype'] == 'employee'){
+    if($_SESSION['usertype'] == 'employee'){
         header("location: /employee/accounts.php");
     }
-	if($_SESSION['usertype'] == 'resident'){
+    if($_SESSION['usertype'] == 'resident'){
         header("location: /resident/accounts.php");
     }
 ?>

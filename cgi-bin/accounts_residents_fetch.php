@@ -1,6 +1,6 @@
 <?php
-	require_once '/home/frankencluster/public_html/group01/db_connect.php';
-	
+    require_once '/home/frankencluster/public_html/group01/db_connect.php';
+    
     session_start();
     
     if($_SESSION['usertype'] == 'admin'){
@@ -14,7 +14,7 @@
                             "where u.username = '".$_SESSION['username']."';";
     }
 
-	$resident_table = mysql_query($residents_collect_sql);
+    $resident_table = mysql_query($residents_collect_sql);
 
 
     echo '<table class="hoverTable">';
@@ -33,24 +33,24 @@
     {
         echo '<form id="resident_update_row'.$i.'" name="update_row" method="post" action="/cgi-bin/accounts_residents_update.php">';
             echo "<tr>";
-        	echo '<td class="resident_form_cell"><input id="r_id" name="r_id" type="hidden" value="'.$row[0].'" >'.$row[0].'</td>';
+            echo '<td class="resident_form_cell"><input id="r_id" name="r_id" type="hidden" value="'.$row[0].'" >'.$row[0].'</td>';
             if($_SESSION['usertype'] == 'admin'){
-        		echo '<td class="resident_form_cell"><input id="fname" name="fname" type="text" value="'.$row[1].'" ></td>';
-    	    	echo '<td class="resident_form_cell"><input id="lname" name="lname" type="text" value="'.$row[2].'" ></td>';
+                echo '<td class="resident_form_cell"><input id="fname" name="fname" type="text" value="'.$row[1].'" ></td>';
+                echo '<td class="resident_form_cell"><input id="lname" name="lname" type="text" value="'.$row[2].'" ></td>';
             }else{
-        		echo '<td class="resident_form_cell">'.$row[1].'</td>';
-    	    	echo '<td class="resident_form_cell">'.$row[2].'</td>';
+                echo '<td class="resident_form_cell">'.$row[1].'</td>';
+                echo '<td class="resident_form_cell">'.$row[2].'</td>';
             }
-    		echo '<td class="resident_form_cell">'.$row[3].'</td>';
-    		echo '<td class="resident_form_cell"><input id="email" name="email" type="text" value="'.$row[4].'" ></td>';
-    		echo '<td class="resident_form_cell"><input id="phone" name="phone" type="text" value="'.$row[5].'" ></td>';
+            echo '<td class="resident_form_cell">'.$row[3].'</td>';
+            echo '<td class="resident_form_cell"><input id="email" name="email" type="text" value="'.$row[4].'" ></td>';
+            echo '<td class="resident_form_cell"><input id="phone" name="phone" type="text" value="'.$row[5].'" ></td>';
             if($_SESSION['usertype'] == 'admin'){
-    		    echo '<td class="resident_form_cell"><input id="balance" name="balance" type="text" value="'.$row[6].'" ></td>';
+                echo '<td class="resident_form_cell"><input id="balance" name="balance" type="text" value="'.$row[6].'" ></td>';
             }else{
-    	    	echo '<td class="resident_form_cell">'.$row[6].'</td>';
+                echo '<td class="resident_form_cell">'.$row[6].'</td>';
             }
             echo '<td><button form="resident_update_row'.$i.'" id="button1" class="pay_button" align="center">Update</button></td>';
-		    echo '</tr>';
+            echo '</tr>';
         echo '</form>';
         $i++;
     }

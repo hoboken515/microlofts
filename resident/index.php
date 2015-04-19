@@ -12,12 +12,14 @@
 ?>
 
 <h1 class="header">Resident Portal</h1>
+
 <?php
 	session_start();
     echo 'You are logged in as: '.$_SESSION['username'];
 ?>
 
 <center>	
+
 <h2>News Board</h2>
 <?php
 	include '/home/frankencluster/public_html/group01/cgi-bin/news_board_fetch.php';

@@ -8,15 +8,15 @@
 <body>
 
 <?php
-	include '/home/frankencluster/public_html/group01/portal_navbar.php';
+    include '/home/frankencluster/public_html/group01/portal_navbar.php';
 ?>
 
 <div>
-	<h1 class="header">Maintenance Requests</h1>
-	
-	<center>
+    <h1 class="header">Maintenance Requests</h1>
+    
+    <center>
     <h2> Create a Maintenance Request </h2>
-	<form class="form-horizontal" name="maint_form" action="resident_request.php" method="post">
+    <form class="form-horizontal" name="maint_form" action="resident_request.php" method="post">
 
 <!-- Text input-->
 <div class="control-group">
@@ -85,7 +85,9 @@
 
 <br>
 <h2> Your Maintenance Requests </h2>
-<?php include '/home/frankencluster/public_html/group01/cgi-bin/maintenance_requests_fetch.php' ?>
+<?php 
+    include '/home/frankencluster/public_html/group01/cgi-bin/maintenance_requests_fetch.php'
+?>
 </center>
 </div>
 </body>

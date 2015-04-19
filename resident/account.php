@@ -8,12 +8,16 @@
 <body>
 
 <?php
-	include '/home/frankencluster/public_html/group01/portal_navbar.php';
+    include '/home/frankencluster/public_html/group01/portal_navbar.php';
 ?>
 
 <h1 class="header">Resident Account</h1>
 <center>
-    <?php include '/home/frankencluster/public_html/group01/cgi-bin/accounts_residents_fetch.php' ?>
+
+<?php 
+    include '/home/frankencluster/public_html/group01/cgi-bin/accounts_residents_fetch.php' 
+?>
+
 </center>
 </div>
 

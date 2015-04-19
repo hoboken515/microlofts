@@ -7,7 +7,7 @@
 
 <body>
 
-<?php	include '/home/frankencluster/public_html/group01/portal_navbar.php';?>
+<?php   include '/home/frankencluster/public_html/group01/portal_navbar.php';?>
 
 <h1 class="header">Admin Portal</h1>
 <center>
@@ -18,71 +18,28 @@
 
 <h2>Add to News Board</h2>
 <form id="add" action="/cgi-bin/news_board_insert.php" method="post">
-	
-	<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="fname">Topic</label>
-  <div class="controls">
-    <input id="new_topic" name="new_topic" type="text" class="admin_input" required="">
-    
-  </div>
-</div>
+    <!-- Topic Name -->
+    <div class="control-group">
+    <label class="control-label" for="fname">Topic</label>
+        <div class="controls">
+        <input id="new_topic" name="new_topic" type="text" class="admin_input" required="">
+        </div>
+    </div>
 
-	<!-- Text input-->
-<div class="control-group">
-  <label class="control-label" for="fname">Comments</label>
-  <div class="controls">
-    <input id="new_comment" name="new_comment" type="textarea" class="admin_input" required="">
-    
-  </div>
-</div>
+    <!-- Comment -->
+    <div class="control-group">
+    <label class="control-label" for="fname">Comments</label>
+        <div class="controls">
+        <input id="new_comment" name="new_comment" type="textarea" class="admin_input" required="">
+        </div>
+    </div>
 
+    <!-- Submit -->
     <div style="margin-top:50px">
     <button  type="submit" class="admin_button" id="adminbutton1" >Submit</button>
     </div>    
 </form>     
 </center>
-<!-- Possibly Depricated? Needs Design Review. -->
-
-<!-- Text input
-<div class="control-group">
-  <label class="control-label" for="title">Title</label>
-  <div class="controls">
-    <input id="title" name="title" type="text" placeholder="" class="admin_input" required="">
-    
-  </div>
-</div>-->
-
-<!-- Select Basic 
-<div class="control-group">
-  <label class="control-label" for="type">Post Type</label>
-  <div class="controls">
-    <select id="type" name="type" class="admin_input">
-      <option>Admin News</option>
-      <option>Employee News</option>
-      <option>Resident News</option>
-    </select>
-  </div>
-</div>-->
-
-<!-- Text input
-<div class="control-group">
-  <label class="control-label" for="comments">Comments</label>
-  <div class="controls">
-    <input id="comments" name="comments" type="text" placeholder="" class="admin_input" required="">
-    
-  </div>
-</div>-->
-
-<!-- Button (Double) 
-<div class="control-group">
-  <label class="control-label" for="applybutton1"></label>
-  <div class="controls">
-    <button id="adminbutton1" name="adminbutton1" class="admin_button">Submit</button>
-    <button id="adminbutton2" name="adminbutton2" class="admin_button">Cancel</button>
-  </div>
-</div>
--->
 
 </body>
 </html>

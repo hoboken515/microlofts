@@ -14,7 +14,10 @@
 <h1 class="header">Manage Maintenance Requests</h1>
 	
 <center>
-<?php include '/home/frankencluster/public_html/group01/cgi-bin/maintenance_requests_fetch.php' ?>
+
+<?php 
+    include '/home/frankencluster/public_html/group01/cgi-bin/maintenance_requests_fetch.php'
+?>
 <br>
 
 </center>

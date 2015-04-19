@@ -8,14 +8,14 @@
 <body>
 
 <?php
-	include '/home/frankencluster/public_html/group01/portal_navbar.php';
+    include '/home/frankencluster/public_html/group01/portal_navbar.php';
 ?>
 
 <div>
-	<h1 class="header">Resident Survey</h1>
-	
+    <h1 class="header">Resident Survey</h1>
+    
 <center>
-	<form class="form-horizontal" name="survey_form" action="survey_email.php" method="post">
+    <form class="form-horizontal" name="survey_form" action="survey_email.php" method="post">
 
 <!-- Multiple Radios (inline) -->
 <div class="control-group">

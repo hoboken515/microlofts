@@ -12,13 +12,17 @@
 ?>
 
 <div>
-	<h1 class="header">Manage Unit Inventory</h1>
+<h1 class="header">Manage Unit Inventory</h1>
+
 <center>	
+
 <h2> Update Units </h2>
 <br>
+
 <?php 
-include '/home/frankencluster/public_html/group01/cgi-bin/units_availability_fetch.php'
+    include '/home/frankencluster/public_html/group01/cgi-bin/units_availability_fetch.php'
 ?>
+
 </center>
 </div>
 </body>

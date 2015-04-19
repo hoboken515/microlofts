@@ -2,12 +2,12 @@
 <head>
 <title>Contact Us | Micro Loft</title>
 
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
-	<link rel="stylesheet" href="styles/bootstrap.min.css">
-	<link  type="text/css" rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link  type="text/css" rel="stylesheet" href="styles/custom.css">
 </head>
 
 <body>
@@ -27,8 +27,8 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <?php
-			include '/home/frankencluster/public_html/group01/home_navbar.php';
-	   ?>
+            include '/home/frankencluster/public_html/group01/home_navbar.php';
+       ?>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
@@ -44,17 +44,17 @@
         </div>
     </div>
     <div class="row">
-    	<div class="col-md-6">
+        <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><i class="fa fa-fw fa-check"></i> Leasing Center Contact </h4>
                 </div>
                 <div class="panel-body">
                     <p>Gabby "She Did All The Work" Cruise<br>
-					1234 Circle Lane<br>
-					Atlanta, GA 30303<br>
-					(770) 867-5309
-					</p>
+                    1234 Circle Lane<br>
+                    Atlanta, GA 30303<br>
+                    (770) 867-5309
+                    </p>
                 </div>
             </div>
         </div>
@@ -65,24 +65,24 @@
                 </div>
                 <div class="panel-body">
                     <p>Saad "I'm Gonna Get You Sucka" Admiral-E<br>
-					1234 Circle Lane<br>
-					Atlanta, GA 30303<br>
-					(770) 867-5309 </p>
+                    1234 Circle Lane<br>
+                    Atlanta, GA 30303<br>
+                    (770) 867-5309 </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-    	<div class="col-md-6">
+        <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><i class="fa fa-fw fa-check"></i> Maintenance Contacts</h4>
                 </div>
                 <div class="panel-body">
                     <p>Julian "Not Really" Black<br>
-					1234 Circle Lane<br>
-					Atlanta, GA 30303<br>
-					(770) 867-5309 </p>
+                    1234 Circle Lane<br>
+                    Atlanta, GA 30303<br>
+                    (770) 867-5309 </p>
                 </div>
             </div>
         </div>
@@ -93,9 +93,9 @@
                 </div>
                 <div class="panel-body">
                     <p>Lee "The Muscle" Buttercup<br>
-					1234 Circle Lane<br>
-					Atlanta, GA 30303<br>
-					(770) 867-5309 </p>
+                    1234 Circle Lane<br>
+                    Atlanta, GA 30303<br>
+                    (770) 867-5309 </p>
                 </div>
             </div>
         </div>

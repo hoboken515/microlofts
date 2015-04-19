@@ -1,6 +1,6 @@
 <?php
-	require_once '/home/frankencluster/public_html/group01/db_connect.php';
-	
+    require_once '/home/frankencluster/public_html/group01/db_connect.php';
+    
     $topic = str_replace("'","\'",$_POST['new_topic']);
     $comment = str_replace("'","\'",$_POST['new_comment']);
 
@@ -13,13 +13,13 @@
     $sql = "INSERT INTO tbl_news (topic_name, comments, user_id) VALUES ('$topic', '$comment', $user_id );";
     mysql_query($sql);
 
-	if($_SESSION['usertype'] == 'admin'){
+    if($_SESSION['usertype'] == 'admin'){
         header("location: /admin/index.php");
     }
-	if($_SESSION['usertype'] == 'employee'){
+    if($_SESSION['usertype'] == 'employee'){
         header("location: /employee/index.php");
     }
-	if($_SESSION['usertype'] == 'resident'){
+    if($_SESSION['usertype'] == 'resident'){
         header("location: /resident/index.php");
     }
 ?>

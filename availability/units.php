@@ -1,13 +1,13 @@
 <html>
 <head>
-	<title>Units | Micro Loft</title>
+    <title>Units | Micro Loft</title>
 
-	<script src="../js/jquery-2.1.3.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/main.js"></script>
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
 
-	<link rel="stylesheet" href="../styles/bootstrap.min.css">
-	<link  type="text/css" rel="stylesheet" href="../styles/custom.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link  type="text/css" rel="stylesheet" href="../styles/custom.css">
 </head>
 
 <body>
@@ -28,8 +28,8 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <?php
-    			include '/home/frankencluster/public_html/group01/home_navbar.php';
-    	    ?>
+                include '/home/frankencluster/public_html/group01/home_navbar.php';
+            ?>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -47,36 +47,9 @@
                         <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
                     </div>
                 </div>
-<?php 
-    include '/home/frankencluster/public_html/group01/cgi-bin/units_availability_fetch.php'
-?>
-<!--                <table class="table">
-                    <thead>
-                        <tr class="filters">
-                            <th><input type="text" class="form-control" placeholder="Apt#" disabled></th>
-                            <th><input type="text" class="form-control" placeholder="Unit Style" disabled></th>
-                            <th><input type="text" class="form-control" placeholder="Current Price" disabled></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>1 Bedroom</td>
-                            <td>$840/mo.</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>2 Bedrooms</td>
-                            <td>$975/mo.</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>3 Bedrooms</td>
-                            <td>$1,115/mo.</td>
-                        </tr>
-                    </tbody>
-                </table>
--->
+                <?php 
+                    include '/home/frankencluster/public_html/group01/cgi-bin/units_availability_fetch.php'
+                ?>
             </div>
         </div>
         <br>

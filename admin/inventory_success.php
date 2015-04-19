@@ -8,16 +8,16 @@
 <body>
 
 <?php
-	include '/home/frankencluster/public_html/group01/portal_navbar.php';
+    include '/home/frankencluster/public_html/group01/portal_navbar.php';
 ?>
 
 <div>
-	<h1 class="header">Inventory Success</h1>
-	<center>
-		<div class="success_text">
-		You have successfully edit the unit inventory!
-		</div>
-	</center>
+    <h1 class="header">Inventory Success</h1>
+    <center>
+        <div class="success_text">
+        You have successfully edit the unit inventory!
+        </div>
+    </center>
 </div>
 </body>
 

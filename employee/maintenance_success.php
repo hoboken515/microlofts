@@ -8,16 +8,16 @@
 <body>
 
 <?php
-	include '/home/frankencluster/public_html/group01/portal_navbar.php';
+    include '/home/frankencluster/public_html/group01/portal_navbar.php';
 ?>
 
 <div>
-	<h1 class="header">Employee Maintenance Request Success</h1>
-	<center>
-		<div class="success_text">
-		You have successfully edited a maintenance request!
-		</div>
-	</center>
+    <h1 class="header">Employee Maintenance Request Success</h1>
+    <center>
+        <div class="success_text">
+        You have successfully edited a maintenance request!
+        </div>
+    </center>
 </div>
 </body>
 

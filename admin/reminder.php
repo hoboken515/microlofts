@@ -8,12 +8,12 @@
 <body>
 
 <?php
-	include '/home/frankencluster/public_html/group01/portal_navbar.php';
+    include '/home/frankencluster/public_html/group01/portal_navbar.php';
 ?>
 
 <div>
-	<h1 class="header">Reminders</h1>
-	
+    <h1 class="header">Reminders</h1>
+    
 <center>
 <h2>Send a Rent Reminder</h2>
 <form class="form-horizontal" name="reminder_form" action="reminder_email.php" method="post">
